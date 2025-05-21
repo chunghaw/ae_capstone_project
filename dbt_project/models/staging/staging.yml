@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: snowflake
+    tables:
+      - name: crypto_daily_ohlcv
+        description: "Raw OHLCV loaded via Python"
+models:
+  - name: stg_crypto_daily_ohlcv
+    description: "Clean copy of raw OHLCV"
+    columns:
+      - name: symbol
+        tests: [not_null]
+      - name: event_date
+        tests: [not_null]
+      - name: open
+        tests: [not_null]
+      - name: high
+        tests: [not_null]
+      - name: low
+        tests: [not_null]
+      - name: close
+        tests: [not_null]
+      - name: volume
+        tests: [not_null]
+      - name: quote_asset_volume
+        tests: [not_null]
+      - name: number_of_trades
+        tests: [not_null]
+      - name: taker_buy_base
+        tests: [not_null]
+      - name: taker_buy_quote
+        tests: [not_null]

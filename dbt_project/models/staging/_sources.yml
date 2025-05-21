@@ -1,9 +1,0 @@
-version: 2
-
-sources:
-  - name: binance
-    database: DATAEXPERT_STUDENT
-    schema: chunghaw
-    tables:
-      - name: crypto_daily_ohlcv
-      - name: crypto_24h_stats
