@@ -22,7 +22,7 @@ import pyarrow as pa
 from datetime import datetime
 from dotenv import load_dotenv
 
-from binance.aws_secret_manager import get_secret
+from scripts.binance.aws_secret_manager import get_secret
 from pyiceberg.catalog import load_catalog
 from pyiceberg.exceptions import TableAlreadyExistsError
 from pyiceberg.io.pyarrow import PyArrowFileIO

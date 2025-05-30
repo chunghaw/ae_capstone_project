@@ -7,7 +7,7 @@ import botocore
 import snowflake.connector
 from snowflake.connector.pandas_tools import write_pandas
 from botocore.exceptions import ClientError  
-from binance.aws_secret_manager import get_secret  
+from scripts.binance.aws_secret_manager import get_secret  
 from dotenv import load_dotenv
 
 from pyiceberg.catalog import load_catalog
