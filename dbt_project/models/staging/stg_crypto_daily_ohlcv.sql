@@ -13,4 +13,4 @@ select
   number_of_trades,
   taker_buy_base,
   taker_buy_quote
-from {{ source('snowflake','crypto_daily_ohlcv') }}
+from {{ source('chunghaw','crypto_daily_ohlcv') }}

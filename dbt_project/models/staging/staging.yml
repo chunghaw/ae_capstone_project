@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: snowflake
+  - name: chunghaw
     tables:
       - name: crypto_daily_ohlcv
         description: "Raw OHLCV loaded via Python"

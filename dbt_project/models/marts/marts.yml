@@ -28,4 +28,4 @@ models:
       - name: taker_buy_base
         tests: [not_null]
       - name: taker_buy_quote
-        tests: [not_null]       
+        tests: [not_null]
